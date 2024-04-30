@@ -3,7 +3,7 @@ import math
 import coordenadas
 from azimuth import calcular_azimuth
 
-api_key = "BjU1fQm5wYMsZR90Tejy0NjxGYsIg54qKcz5i9mw"
+api_key = "api_key"
 
 def calcular_inclinacao(latitude):
     # Converte a latitude de graus para radianos
