@@ -33,7 +33,7 @@ def _localização():
 
 def _DadosDoVento(latitude, longitude):
     
-    api_key = "bd5e378503939ddaee76f12ad7a97608"
+    api_key = "api_key"
 
 
     response = requests.get(f"http://api.openweathermap.org/data/2.5/weather?lat={latitude}&lon={longitude}&appid={api_key}")
@@ -68,7 +68,7 @@ def _ForcaDoVento(data):
         print("\nNão foram encontrados dados de vento para esta localização.")
 
 def _HistoricoDoVento(latitude, longitude):
-    api_key = "d78bf35444264600964175412242804"
+    api_key = "api_key"
 
     start_date = "2023-01-01"
     end_date = "2023-12-31"
@@ -127,7 +127,7 @@ def _MediaHistorica(data, speeds, gusts, directions):
 
 def _previsao_15_dias(latitude, longitude):
 
-    api_key = "bd5e378503939ddaee76f12ad7a97608" 
+    api_key = "api_key" 
 
     response = requests.get(
         f"http://api.openweathermap.org/data/2.5/forecast/daily?lat={latitude}&lon={longitude}&cnt=15&appid={api_key}&units=metric"
